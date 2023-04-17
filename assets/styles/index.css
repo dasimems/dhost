@@ -1,0 +1,66 @@
+@import url("./variables.css");
+
+html{
+    font-size: 14px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+nav{
+    border: 2px solid var(--primary-color-gray);
+    padding: 0px var(--padding-vertical-two);
+    height: var(--header-height);
+    background: var(--primary-color-gray);
+    color: var(--text-color-opposite);
+    border-radius: 900px;
+    -webkit-border-radius: 900px;
+    -moz-border-radius: 900px;
+    -ms-border-radius: 900px;
+    -o-border-radius: 900px;
+    margin: 20px var(--padding-vertical);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img{
+    height: 30px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+nav .middle-link{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    position: relative;
+
+}
+
+nav .right-side-link{
+    display: flex;
+    list-style: none;
+}
+
+nav .right-side-link a{
+    padding: 12px 20px;
+    display: inline-flex;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

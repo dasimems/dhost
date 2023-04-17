@@ -1,0 +1,12 @@
+:root{
+    --primary-color: #39499D;
+    --primary-color-gray: #e9ebf8;
+    --primary-color-light: #2371BC;
+    --secondary-color: #AE3335;
+    --padding-vertical: 3%;
+    --padding-vertical-two: 10px;
+    --padding-vertical-total: calc(3% + 10px);
+    --text-color: white;
+    --text-color-opposite: black;
+    --header-height: 60px;
+}
