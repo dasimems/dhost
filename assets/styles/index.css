@@ -13,7 +13,7 @@ html{
 
 nav{
     border: 2px solid var(--primary-color-gray);
-    padding: 0px var(--padding-vertical-two);
+    padding: 0px var(--padding-horizontal-two);
     height: var(--header-height);
     background: var(--primary-color-gray);
     color: var(--text-color-opposite);
@@ -22,10 +22,18 @@ nav{
     -moz-border-radius: 900px;
     -ms-border-radius: 900px;
     -o-border-radius: 900px;
-    margin: 20px var(--padding-vertical);
+    position: fixed;
+    width: calc(100% - (var(--padding-horizontal) * 2));
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 nav .logo img{
@@ -63,4 +71,46 @@ nav .right-side-link a{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+main{
+    min-height: 100vh;
+}
+
+footer{
+    padding: 100px var(--padding-horizontal-total);
+    padding-bottom: 20px;
+    background-color: var(--primary-color);
+
+}
+
+footer .site-description{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 20px;
+
+}
+
+footer .site-description .logo{
+    font-size: 2.5rem;
+    color: var(--primary-color-gray);
+
+}
+
+footer .site-description .description{
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.2rem;
+}
+
+footer .site-description .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+footer .site-description .social-links a{
+    font-size: 2rem;
+    color: white;
 }
